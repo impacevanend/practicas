@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="clase.css">
+    <title>Operadores de Cadena</title>
+</head>
+<body>
+    <h1>Operador de Cadena</h1><br>
+    <p>El operador de concatenación <span>+</span> </p>
+    <p id="ejemplo"></p>
+    <p id="ejemplo1"></p>
+    <p id="ejemplo2"></p>
+    <script>
+        /*
+        +  Sirve para concatenar cadenas
+        
+        */
+
+        var nombre = "Tim ";
+        var apellido = "Berners-Lee"
+
+        var union = nombre+apellido;
+
+        document.getElementById("ejemplo").innerHTML = union;
+
+        //Operador de asignación +=
+
+        var lugarOrigen="Reino Unido, "
+
+        lugarOrigen += "8 de junio de 1955.";
+
+        document.getElementById("ejemplo1").innerHTML = lugarOrigen;
+
+        //Adicionando números y cadenas.
+
+        var adicionar = "HTML " + 5;// Se convierte en cadena.
+
+        document.getElementById("ejemplo2").innerHTML = adicionar;
+
+
+    </script>
+</body>
+</html>

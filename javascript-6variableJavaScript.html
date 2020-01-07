@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="clase.css">
+    <title>Variables En JavaScript</title>
+</head>
+<body>
+    <h1>Variables En JavaScript</h1>
+    <p id="ejemplo"></p>
+    <p id="ejemplo2"></p>
+    <p id="ejemplo3"></p>
+    <script>
+        /*
+        VARIABLES EN JAVASCRIPT
+
+        -Deben ser identificadores únicos,(no se puede utilizar el mismo nombre para dos variables.)
+        -Recomendable que los nombres sean descriptivos. -> var nombre, apellido, edad, afición;
+        -Pueden contener tanto cadenas como números.
+        -Son sensibles a las mayúsculas o minúsculas-> no es lo mismo var nombre a var Nombre
+            var nombre = 10;
+            var NOMBRE = 11;
+
+            alert(nombre);
+            alert(NOMBRE);
+    
+        
+        */
+       //Declara una variable, var nombreVariable 
+        var fecha;// *Tiene un valor indefinido, esta declarada pero no contiene un valor asignado.
+        var nombre = "Alan Mathison Turing";
+
+        //Muestra el valor de la variable
+        document.getElementById('ejemplo').innerHTML = fecha;
+        
+        //Asignar el valor de la variable.
+        
+        var nombreVariable = 'Alan';
+        document.getElementById('ejemplo2').innerHTML = nombreVariable;
+
+        //Declarar varias variables en la misma sentencia.
+
+        var origen, nacimiento;
+
+        var country = "Reino Unido", 
+            nacimiento = "1912";
+
+        //Asignar operaciones a una variable.
+
+        var nombreApellido = "Alan" +" "+ "Mathison"+" "+"Turing";
+        var fallecimiento = 1912 + 42;
+
+        document.getElementById("ejemplo3").innerHTML = nombreApellido + ", falleció en </br>"+fallecimiento+"."
+    </script>
+
+    
+</body>
+</html>

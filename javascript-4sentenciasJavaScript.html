@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="clase.css">
+    <title>Sentencia Javascript</title>
+</head>
+<body>
+    <h1>Sentencias en Javascript.</h1>
+    <p>-El uso del punto y coma.</p>
+    <p>-Sentencias en la misma linea.</p>
+    <p>-Espacios en blanco.</p>
+    <p>-Bloques de código.</p>
+    <script>
+    /*
+    Sentencias, instrucciones que componen nuestro código.
+    Se ejecutan de arriba a abajo
+    -Las sentencias deben acabar con un punto y coma.
+    -Se pueden escribir sentencias en la misma linea, separadas por punto y coma.
+    */    
+
+    var a = 3;
+    var b = 5;
+    var c = a+b;
+    alert("El resultado de c es: "+c);
+
+
+    //Sentencias en la misma linea, no funciona si esta
+    //separado por punto y coma.
+
+    var a = 2; var b = 10; var c = a*b; alert('El resultado de de c es: '+c)
+
+    //Espacios en blanco, no tiene en cuenta los espacios en blanco.
+
+    var nombre = "Alan Mathison Turing";
+    alert(nombre);
+
+    var nombre="Alan Mathison Turing"; // El mismo resultado.
+    alert(nombre);
+
+    //Recomendable utilizar espacios entre los operadores aritméticos.
+     //Evitar lineas de 180 caracteres, es recomendable dividir
+     //la linea después de un operador
+
+     var apellido =
+        'Mathison Turing'
+    
+     alert(apellido);
+
+     /*Bloques de código, grupo de instrucciones que van
+     entre dos llaves-> se utilizan en funciones, bucles, condiciones, etc.
+     */
+
+     function orden(){
+        alert("Contengo la primera instrucción."); 
+        alert("Contengo la segunda instrucción.");
+     }
+     orden();
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="clase.css">
+    <title>Operadores Aritméticos</title>
+
+</head>
+<body>
+
+    <h1>Operadores Aritméticos</h1>
+
+    <p id="resultado">Suma: +</p>
+    <p id="resultado1">Resta: -</p>
+    <p id="resultado2">Multiplicación: *</p>
+    <p id="resultado3">División: /</p>
+    <p id="resultado4">Residuo: %</p>
+    <p id="resultado5">Incremento: ++</p>
+    <p id="resultado6">Decremento: --</p>
+
+    <script>
+    /*
+    -Nos permiten realizar operaciones, de suma, resta, multiplicación, división y residuo.
+    +
+    -
+    *
+    /
+    %
+    ++
+    --
+
+    Cuando necesitemos realizar operaciones entre dos números, variables,etc.
+
+    */
+
+    var x = 4, y = 6;
+
+    //Operadores binarios, están entre dos operandos
+
+    document.getElementById("resultado").innerHTML = "La suma es: "+(x+y);
+    document.getElementById("resultado1").innerHTML = "La resta es: "+(x-y);
+    document.getElementById("resultado2").innerHTML = "La multiplicación es: "+(x*y);
+    document.getElementById("resultado3").innerHTML = "La división es: "+Math.floor((x/y));
+    document.getElementById("resultado4").innerHTML = "El residuo  es: "+(x%y);
+
+    //Operadores unarios
+
+    document.getElementById("resultado5").innerHTML = "El incremento es: "+(++x);
+    document.getElementById("resultado6").innerHTML = "El Decremento es: "+(--y);
+
+    
+    
+    
+    </script>
+</body>
+</html>
